@@ -1,0 +1,28 @@
+{
+  "baseUrl": "https://app.lendflow.com/",
+  "env": {
+    "HOST": "http://localhost:3000"
+  },
+  "watchForFileChanges": true,
+  "defaultCommandTimeout": 6000,
+  "includeShadowDom": true,
+  "chromeWebSecurity": false,
+  "testFiles": "**/*.feature",
+  "video": false,
+  "pageLoadTimeout": 120000,
+  "requestTimeout": 30000,
+  "reporter": "cypress-multi-reporters",
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "cypress/reports/mochareports/assets",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": "mmddyyyy_HHMMss"
+    }
+  }
+}
