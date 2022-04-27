@@ -25,7 +25,7 @@ Cypress.Commands.add('fillform', (datatable) => {
         form.inputPhone().type(element.Phone)
         form.inputPass().type(element.Password)
         form.inputPassConfirm().type(element.Password)
-        cy.wait(10000)
+        cy.wait(2000) //Not necessary
     })
 })
 
